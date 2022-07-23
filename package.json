@@ -1,0 +1,57 @@
+{
+  "name": "GNTools",
+  "version": "1.0.0",
+  "homepage": "https://wandhoven.ddns.net/RPG/GMTools",
+  "private": true,
+  "dependencies": {
+    "@sentry/react": "^5.24.2",
+    "@sentry/tracing": "^5.24.2",
+    "@types/file-saver": "^2.0.1",
+    "@types/jest": "24.0.22",
+    "@types/lodash": "^4.14.116",
+    "@types/node": "12.12.7",
+    "@types/react": "^16.8.4",
+    "@types/react-beautiful-dnd": "^11.0.3",
+    "@types/react-dom": "^16.8.2",
+    "@types/react-helmet": "^6.1.1",
+    "@types/react-router-dom": "^5.1.2",
+    "file-saver": "^2.0.0-rc.3",
+    "firebase": "^7.3.0",
+    "lodash": "^4.17.11",
+    "react": "16.11.0",
+    "react-beautiful-dnd": "^12.0.0",
+    "react-dom": "16.11.0",
+    "react-firebase-hooks": "^2.1.0",
+    "react-ga": "^2.5.3",
+    "react-helmet": "^6.1.0",
+    "react-router-dom": "^5.1.2",
+    "react-scripts": "3.4.3",
+    "semantic-ui-css": "^2.4.0",
+    "semantic-ui-react": "^0.88.1",
+    "sha512": "^0.0.1",
+    "typescript": "3.7.2"
+  },
+  "devDependencies": {
+    "cypress": "3.6.1",
+    "netlify-plugin-cypress": "^1.4.1"
+  },
+  "scripts": {
+    "start": "HTTPS=false react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ],
+  "main": "index.js",
+  "repository": "https://github.com/JulianWww/Muncoordinated-2",
+  "author": "JulianWww <julian.wandhoven@gmail.com>",
+  "license": "MIT"
+}
