@@ -5,6 +5,7 @@ import {Header} from 'semantic-ui-react';
 import './App.css';
 
 import InitativeQueue from './components/InitativeQueue';
+import Bartering from './components/Bartering'
 import {urlBase} from "./const";
 //const firebaseConfig = {
 //  apiKey: 'AIzaSyA9EuEf7m3YOTBhBNhoe7DcOIZJP2toL6w',
@@ -25,6 +26,7 @@ class App extends React.Component {
     return (
       <Switch>
         <Route exact path={urlBase + "/"} component={InitativeQueue} />
+        <Route exact path={urlBase + "/Bartering"} component={Bartering} />
       </Switch>
     );
   }

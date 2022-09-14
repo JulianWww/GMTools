@@ -11,12 +11,13 @@ import {
   List,
   Visibility,
 } from 'semantic-ui-react';
+import {urlBase} from "../const";
 
 interface HomepageHeadingProps {
   mobile: boolean;
 }
 
-const REPO_LINK = 'https://github.com/MaxwellBo/Muncoordinated-2';
+const REPO_LINK = 'https://github.com/JulianWww/GMTools';
 
 /* eslint-disable react/no-multi-comp */
 /* Heads up! HomepageHeading uses inline styling, however it's not the best practice. Use CSS or styled components for
@@ -81,6 +82,7 @@ class DesktopContainer extends React.Component<DesktopContainerProps, DesktopCon
   render() {
     const { children } = this.props;
     const { fixed } = this.state;
+    console.log(window.location.pathname)
 
     // Semantic-UI-React/src/addons/Responsive/Responsive.js
     return (
@@ -96,7 +98,12 @@ class DesktopContainer extends React.Component<DesktopContainerProps, DesktopCon
               size="large"
             >
               <Container>
-                <Menu.Item as="a" active>Initiative</Menu.Item>
+                <Menu.Item as="a" active={window.location.pathname==urlBase+"/"} href={urlBase+"/"}>
+                  Initiative
+                </Menu.Item>
+                <Menu.Item as="a" active={window.location.pathname==urlBase+"/Bartering"} href={urlBase+"/Bartering"}>
+                  Bartering
+                </Menu.Item>
               </Container>
             </Menu>
             <HomepageHeading mobile={false} />
