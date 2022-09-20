@@ -1,5 +1,7 @@
 #!/bin/bash
 
 npm run build
-scp -r build/* ubuntu@wandhoven.ddns.net:/media/B/html/RPG/GMTools/
-#serve -s -d build
+cp ./.htaccess ./build/.htaccess
+ssh ubuntu@wandhoven.ddns.net "rm -r /media/B/html/RPG/GMTools"
+scp -r build ubuntu@wandhoven.ddns.net:/media/B/html/RPG/GMTools
+

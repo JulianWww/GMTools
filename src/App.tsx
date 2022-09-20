@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import { Route, Switch } from 'react-router-dom';
-import {Header} from 'semantic-ui-react';
+//import {Header} from 'semantic-ui-react';
 import './App.css';
 
 import InitativeQueue from './components/InitativeQueue';

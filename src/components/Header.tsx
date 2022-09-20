@@ -209,7 +209,7 @@ const Tail = ({children}: ResponsiveContainerProps) => (
           <Grid.Column className={"thirdwidth"}>
             <Header as="h4" inverted>Info</Header>
             <p>Made by <a href="https://github.com/JulianWww">Julian Wandhoven</a></p>
-            <p>Copyright © 2022</p>
+            <p>Copyleft © 2022</p>
           </Grid.Column>
         </Grid.Row>
       </Grid>

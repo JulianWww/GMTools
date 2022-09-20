@@ -1,11 +1,10 @@
-import { ppid } from 'process';
+//import { ppid } from 'process';
 import * as React from 'react';
 import {
   Container,
   Input,
   Header,
   Grid,
-  Popup,
   InputOnChangeData,
 } from 'semantic-ui-react';
 import {ResponsiveContainer} from "./Header";
@@ -26,7 +25,7 @@ class Role {
     if (this.roll < 0) {this.roll = 1}
   }
   getMod() {
-    if (this.roll == 20) {
+    if (this.roll === 20) {
       return 2*(this.roll + this.mod)
     }
     //if (person.roll == 1) {
@@ -84,10 +83,10 @@ export default class Bartering extends React.Component<Props, State> {
     super(props);
 
     this.state = {
-      givenPrice: new Price,
-      calculatedPrice: new Price,
-      sellRole: new Role,
-      buyRole: new Role
+      givenPrice: new Price(),
+      calculatedPrice: new Price(),
+      sellRole: new Role(),
+      buyRole: new Role()
     };
   }
 
@@ -160,7 +159,7 @@ export default class Bartering extends React.Component<Props, State> {
                   label="Seller roll"
                   type="number"
                   onChange={this.update_sell_roll}
-                  value={this.state.sellRole.roll != 0 ? this.state.sellRole.roll : undefined}
+                  value={this.state.sellRole.roll !== 0 ? this.state.sellRole.roll : undefined}
                 />
               </Grid.Column>
               <Grid.Column width={8}>
@@ -180,7 +179,7 @@ export default class Bartering extends React.Component<Props, State> {
                   label="Buyer roll"
                   type="number"
                   onChange={this.update_buy_roll}
-                  value={this.state.buyRole.roll != 0 ? this.state.buyRole.roll : undefined}
+                  value={this.state.buyRole.roll !== 0 ? this.state.buyRole.roll : undefined}
                 />
               </Grid.Column>
               <Grid.Column width={8}>
