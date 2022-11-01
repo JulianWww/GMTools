@@ -98,10 +98,10 @@ class DesktopContainer extends React.Component<DesktopContainerProps, DesktopCon
               size="large"
             >
               <Container>
-                <Menu.Item as="a" active={window.location.pathname==urlBase+"/"} href={urlBase+"/"}>
+                <Menu.Item as="a" active={window.location.pathname===urlBase+"/"} href={urlBase+"/"}>
                   Initiative
                 </Menu.Item>
-                <Menu.Item as="a" active={window.location.pathname==urlBase+"/Bartering"} href={urlBase+"/Bartering"}>
+                <Menu.Item as="a" active={window.location.pathname===urlBase+"/Bartering"} href={urlBase+"/Bartering"}>
                   Bartering
                 </Menu.Item>
               </Container>
